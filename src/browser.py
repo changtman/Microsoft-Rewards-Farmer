@@ -24,7 +24,7 @@ def browserSetup(
     options.add_argument("log-level=3")
     userDataDir = setupProfiles(isMobile, sessionName)
     options.add_argument(f"--user-data-dir={userDataDir.as_posix()}")
-    return webdriver.Chrome(options=options)
+    return webdriver.Remote(command_executor='http://localhost:4444', options=options)
 
 
 def setupProfiles(isMobile: bool, sessionName: str) -> Path:
