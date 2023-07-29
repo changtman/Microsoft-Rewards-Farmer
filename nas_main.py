@@ -1,3 +1,4 @@
+#!/var/services/homes/changtman/dev/venv/bin/python3
 print("Hello World!")
 # use Task Scheduler to automate script each day 
 # https://community.synology.com/enu/forum/17/post/70790?page=1&sort=oldest
